@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-isbb))&c)1^7f=2#ugpg%bxz-o+z-vyz_b1e%^xdh8wf2rq3so
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['156.67.210.212','suryatrsrewa.pankajtrsrewa.com','www.suryatrsrewa.pankajtrsrewa.com']
+ALLOWED_HOSTS = ['156.67.210.212','suryatrsrewa.pankajtrsrewa.com','www.suryatrsrewa.pankajtrsrewa.com',"127.0.0.1"]
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -73,26 +74,26 @@ WSGI_APPLICATION = 'suryatrsrewa.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
 DATABASES = {
-            'default': {
-                        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-                        'NAME': 'suryatrsrewa',
-                        'USER': 'postgres',
-                        'PASSWORD': 'Pankaj@123',
-                        'HOST': '127.0.0.1',
-                        'PORT': '5432',
-                        'OPTIONS': {
-                                  'client_encoding' : 'UTF8',
-                                  #'timezone:' : 'Asia/Kolkata',
-                        }
-                    },
-            }
+   'default': {
+       'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': BASE_DIR / 'db.sqlite3',
+   }
+}
+# DATABASES = {
+#             'default': {
+#                         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#                         'NAME': 'suryatrsrewa',
+#                         'USER': 'postgres',
+#                         'PASSWORD': 'Pankaj@123',
+#                         'HOST': '127.0.0.1',
+#                         'PORT': '5432',
+#                         'OPTIONS': {
+#                                   'client_encoding' : 'UTF8',
+#                                   #'timezone:' : 'Asia/Kolkata',
+#                         }
+#                     },
+#             }
 
 
 # Password validation
